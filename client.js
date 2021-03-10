@@ -16,18 +16,18 @@ const connect = function() {
     conn.write('Name: RWT');
   });
 
-  conn.on('connect', () => {
-    // conn.write('Move: down');
-    // setTimeout(()=> {
-    //   conn.write('Move: down');
-    // }, 500);
-    // setTimeout(()=> {
-    //   conn.write('Move: down');
-    // }, 1000);
-    setInterval(()=>{
-      conn.write('Move: up');
-    }, 50);
-  });
+  // conn.on('connect', () => {
+  //   // conn.write('Move: down');
+  //   // setTimeout(()=> {
+  //   //   conn.write('Move: down');
+  //   // }, 500);
+  //   // setTimeout(()=> {
+  //   //   conn.write('Move: down');
+  //   // }, 1000);
+  //   setInterval(()=>{
+  //     conn.write('Move: up');
+  //   }, 50);
+  // });
 
 
   conn.on('data', (data) => {
